@@ -17,7 +17,7 @@ uint32_t swizzle_y(uint32_t y0, SWIZZLETYPE sType) {
     else return y0;
 }
 
-void swizzleARGB(BYTE *dst, const BYTE *src,
+void swizzleARGB(uint8_t *dst, const uint8_t *src,
                  int width, int height,
                  SWIZZLETYPE sType) {
 
@@ -75,7 +75,7 @@ void swizzleARGB(BYTE *dst, const BYTE *src,
 
 }
 
-void unswizzleARGB(BYTE *dst, const BYTE *src,
+void unswizzleARGB(uint8_t *dst, const uint8_t *src,
                    int width, int height,
                    SWIZZLETYPE sType) {
 

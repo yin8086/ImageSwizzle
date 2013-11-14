@@ -1,4 +1,5 @@
 #include <iostream>
+#include <FreeImagePlus.h>
 #include "swizzleUtility.h"
 
 using namespace std;

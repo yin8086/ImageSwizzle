@@ -1,7 +1,6 @@
 #ifndef SWIZZLEUTILITY_H
 #define SWIZZLEUTILITY_H
 #include <stdint.h>
-#include <FreeImagePlus.h>
 
 const uint32_t tileW = 16;
 const uint32_t tileH = 8;
@@ -12,10 +11,10 @@ enum SWIZZLETYPE {
 };
 
 
-void swizzleARGB(BYTE *dst, const BYTE *src,
+void swizzleARGB(uint8_t *dst, const uint8_t *src,
                  int width, int height,
                  SWIZZLETYPE sType = TILE16x8);
-void unswizzleARGB(BYTE *dst, const BYTE *src,
+void unswizzleARGB(uint8_t *dst, const uint8_t *src,
                    int width, int height,
                    SWIZZLETYPE sType = TILE16x8) ;
 
